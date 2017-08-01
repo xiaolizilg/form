@@ -31,11 +31,12 @@
                         <h5>数据列表</h5>
                     </div>
                     <div class="ibox-content">
-                        <div class="col-sm-3">
-                            <a onclick="fnClickAddRow();" href="javascript:void(0);" class="btn btn-primary ">添加行</a>
+                        <div class="col-sm-1">
+                            <a onclick="fnClickAddRow();" href="form.html" class="btn btn-primary ">添加行</a>
                         </div>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">弹框</button>
-
+						<div class="col-sm-1">
+							<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">弹框</button>
+						</div>
                         <div class="col-sm-4">
                             <div class="input-group">
                                 <input type="text" placeholder="请输入关键词" class="input-sm form-control"> <span class="input-group-btn">
@@ -50,16 +51,28 @@
                                     <th>平台</th>
                                     <th>引擎版本</th>
                                     <th>CSS等级</th>
+									<th>状态</th>
+									<th>操作</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="gradeX">
                                     <td>Trident</td>
-                                    <td>Internet Explorer 4.0
-                                    </td>
+                                    <td>Internet Explorer 4.0</td>
                                     <td>Win 95+</td>
                                     <td class="center">4</td>
                                     <td class="center">X</td>
+									<td class="center">
+										<a href="table_basic.html#">
+											<i class="fa fa-check text-navy"></i>
+											启用
+										</a>
+									</td>
+                                    <td class="center">
+										<a class="glyphicon glyphicon-pencil" title="编辑" href="form.html"></a>
+										<a class="glyphicon glyphicon-trash"  title="删除" onclick="del()"></a>
+										<a class="glyphicon glyphicon-eye-open" title="查看" href="show.html"></a>
+									</td>
                                 </tr>
                                 <tr class="gradeC">
                                     <td>Trident</td>
@@ -68,6 +81,17 @@
                                     <td>Win 95+</td>
                                     <td class="center">5</td>
                                     <td class="center">C</td>
+									<td class="center">
+										<a href="table_basic.html#">
+											<i class="fa fa-remove text-danger"></i>
+											禁用
+										</a>
+									</td>
+                                    <td class="center">
+										<a class="glyphicon glyphicon-pencil" title="编辑" href="form.html"></a>
+										<a class="glyphicon glyphicon-trash"  title="删除" onclick="del()"></a>
+										<a class="glyphicon glyphicon-eye-open" title="查看" href="show.html"></a>
+									</td>
                                 </tr>
                                 <tr class="gradeA">
                                     <td>Trident</td>
@@ -76,6 +100,17 @@
                                     <td>Win 95+</td>
                                     <td class="center">5.5</td>
                                     <td class="center">A</td>
+									<td class="center">
+										<a href="table_basic.html#">
+											<i class="fa fa-remove text-danger"></i>
+											禁用
+										</a>
+									</td>
+                                    <td class="center">
+										<a class="glyphicon glyphicon-pencil" title="编辑" href="form.html"></a>
+										<a class="glyphicon glyphicon-trash"  title="删除" onclick="del()"></a>
+										<a class="glyphicon glyphicon-eye-open" title="查看" href="show.html"></a>
+									</td>
                                 </tr>
                                 <tr class="gradeA">
                                     <td>Trident</td>
@@ -84,6 +119,17 @@
                                     <td>Win 98+</td>
                                     <td class="center">6</td>
                                     <td class="center">A</td>
+									<td class="center">
+										<a href="table_basic.html#">
+											<i class="fa fa-remove text-danger"></i>
+											禁用
+										</a>
+									</td>
+                                    <td class="center">
+										<a class="glyphicon glyphicon-pencil" title="编辑" href="form.html"></a>
+										<a class="glyphicon glyphicon-trash"  title="删除" onclick="del()"></a>
+										<a class="glyphicon glyphicon-eye-open" title="查看" href="show.html"></a>
+									</td>
                                 </tr>
                                 <tr class="gradeA">
                                     <td>Trident</td>
@@ -91,6 +137,17 @@
                                     <td>Win XP SP2+</td>
                                     <td class="center">7</td>
                                     <td class="center">A</td>
+									<td class="center">
+										<a href="table_basic.html#">
+											<i class="fa fa-remove text-danger"></i>
+											禁用
+										</a>
+									</td>
+                                    <td class="center">
+										<a class="glyphicon glyphicon-pencil" title="编辑" href="form.html"></a>
+										<a class="glyphicon glyphicon-trash"  title="删除" onclick="del()"></a>
+										<a class="glyphicon glyphicon-eye-open" title="查看" href="show.html"></a>
+									</td>
                                 </tr>
                                 <tr class="gradeA">
                                     <td>Trident</td>
@@ -98,6 +155,17 @@
                                     <td>Win XP</td>
                                     <td class="center">6</td>
                                     <td class="center">A</td>
+									<td class="center">
+										<a href="table_basic.html#">
+											<i class="fa fa-remove text-danger"></i>
+											禁用
+										</a>
+									</td>
+                                    <td class="center">
+										<a class="glyphicon glyphicon-pencil" title="编辑" href="form.html"></a>
+										<a class="glyphicon glyphicon-trash"  title="删除" onclick="del()"></a>
+										<a class="glyphicon glyphicon-eye-open" title="查看" href="show.html"></a>
+									</td>
                                 </tr>
                                 <tr class="gradeA">
                                     <td>Gecko</td>
@@ -105,6 +173,17 @@
                                     <td>Win 98+ / OSX.2+</td>
                                     <td class="center">1.7</td>
                                     <td class="center">A</td>
+									<td class="center">
+										<a href="table_basic.html#">
+											<i class="fa fa-remove text-danger"></i>
+											禁用
+										</a>
+									</td>
+                                    <td class="center">
+										<a class="glyphicon glyphicon-pencil" title="编辑" href="form.html"></a>
+										<a class="glyphicon glyphicon-trash"  title="删除" onclick="del()"></a>
+										<a class="glyphicon glyphicon-eye-open" title="查看" href="show.html"></a>
+									</td>
                                 </tr>
                                 <tr class="gradeA">
                                     <td>Gecko</td>
@@ -112,84 +191,48 @@
                                     <td>Win 98+ / OSX.2+</td>
                                     <td class="center">1.8</td>
                                     <td class="center">A</td>
+									<td class="center">
+										<a href="table_basic.html#">
+											<i class="fa fa-remove text-danger"></i>
+											禁用
+										</a>
+									</td>
+                                    <td class="center">
+										<a class="glyphicon glyphicon-pencil" title="编辑" href="form.html"></a>
+										<a class="glyphicon glyphicon-trash"  title="删除" onclick="del()"></a>
+										<a class="glyphicon glyphicon-eye-open" title="查看" href="show.html"></a>
+									</td>
                                 </tr>
-                                <tr class="gradeA">
-                                    <td>Gecko</td>
-                                    <td>Firefox 2.0</td>
-                                    <td>Win 98+ / OSX.2+</td>
-                                    <td class="center">1.8</td>
-                                    <td class="center">A</td>
-                                </tr>
-                                <tr class="gradeA">
-                                    <td>Gecko</td>
-                                    <td>Firefox 3.0</td>
-                                    <td>Win 2k+ / OSX.3+</td>
-                                    <td class="center">1.9</td>
-                                    <td class="center">A</td>
-                                </tr>
-                                <tr class="gradeA">
-                                    <td>Gecko</td>
-                                    <td>Camino 1.0</td>
-                                    <td>OSX.2+</td>
-                                    <td class="center">1.8</td>
-                                    <td class="center">A</td>
-                                </tr>
-                                <tr class="gradeA">
-                                    <td>Gecko</td>
-                                    <td>Camino 1.5</td>
-                                    <td>OSX.3+</td>
-                                    <td class="center">1.8</td>
-                                    <td class="center">A</td>
-                                </tr>
-                                <tr class="gradeA">
-                                    <td>Gecko</td>
-                                    <td>Netscape 7.2</td>
-                                    <td>Win 95+ / Mac OS 8.6-9.2</td>
-                                    <td class="center">1.7</td>
-                                    <td class="center">A</td>
-                                </tr>
-                                <tr class="gradeA">
-                                    <td>Gecko</td>
-                                    <td>Netscape Browser 8</td>
-                                    <td>Win 98SE+</td>
-                                    <td class="center">1.7</td>
-                                    <td class="center">A</td>
-                                </tr>
-                                <tr class="gradeA">
-                                    <td>Gecko</td>
-                                    <td>Netscape Navigator 9</td>
-                                    <td>Win 98+ / OSX.2+</td>
-                                    <td class="center">1.8</td>
-                                    <td class="center">A</td>
-                                </tr>
-                                <tr class="gradeA">
-                                    <td>Gecko</td>
-                                    <td>Mozilla 1.0</td>
-                                    <td>Win 95+ / OSX.1+</td>
-                                    <td class="center">1</td>
-                                    <td class="center">A</td>
-                                </tr>
+                               
                             </tbody>
 
                         </table>
-                        <div class="pull-right" >
-                            <ul class="pagination">
-                                <li class="paginate_button previous disabled" id="editable_previous">
-                                    <a href="#">上一页</a>
-                                </li>
-                                <li class="paginate_button active">
-                                    <a href="#">1</a>
-                                </li>
-                                <li class="paginate_button "> 
-                                    <a href="#">2</a>
-                                </li>
-                                <li class="paginate_button next">
-                                    <a href="#">下一页</a>
-                                </li>
-                           </ul>
-                        </div>
-                  
-                       
+						
+						<div class="row">
+							 <div class="col-sm-6"> 
+								 <div class="dataTables_info" id="editable_info" role="alert" aria-live="polite" aria-relevant="all">
+								 显示 1 到 10 项，共 57 项</div>
+							 </div> 
+							<div class="pull-right col-sm-6">
+								<div class="dataTables_paginate paging_simple_numbers" id="editable_paginate">
+									<ul class="pagination">
+										<li class="paginate_button previous disabled" aria-controls="editable" tabindex="0" id="editable_previous">
+											<a href="#">上一页</a>
+										</li>
+										<li class="paginate_button active" aria-controls="editable" tabindex="0"><a href="#">1</a></li><li class="paginate_button " aria-controls="editable" tabindex="0">
+											<a href="#">2</a>
+										</li>
+										<li class="paginate_button " aria-controls="editable" tabindex="0">
+											<a href="#">3</a>
+										</li>
+										<li class="paginate_button next" aria-controls="editable" tabindex="0" id="editable_next">
+											<a href="#">下一页</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						
                     </div>
                 </div>
             </div>
@@ -233,6 +276,28 @@
     <script src="js/plugins/jeditable/jquery.jeditable.js"></script>
     <script src="js/plugins/dataTables/jquery.dataTables.js"></script>
     <script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
+	
+	<!-- 插件 -->
+	 <script src="js/plugins/layer/layer.min.js"></script>
+	<!-- 自定义 -->
+	<script>
+		//删除
+		function  del(){
+			
+			layer.confirm('您确定要删除？', {
+				skin: 'layui-layer-molv', //样式类名
+				btn: ['确定','取消'] //按钮
+				
+				}, function(){
+				  layer.msg('删除成功', {icon: 1});
+				}
+			);
+		}
+			
+	
+	
+	
+	</script>
    
 </body>
 
